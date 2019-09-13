@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:onClick="viewClick">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/songName"
+            android:textColor="@color/white"
+            android:gravity="center|left" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:id="@+id/songButton"
+            android:onClick="songButton"
+            android:layout_alignParentRight="true"/>
+
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:id="@+id/progressBarID"
+            android:indeterminate="false"
+            android:progress="0"
+            android:maxHeight="10dip"
+            android:minHeight="10dip"
+            android:layout_alignParentBottom="true"
+            android:progressDrawable="@drawable/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+    </RelativeLayout>
+</LinearLayout>
